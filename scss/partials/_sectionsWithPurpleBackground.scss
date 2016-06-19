@@ -1,0 +1,23 @@
+
+.sectionBackground{
+	background:url(../images/layerMiddle.png);
+	background-size:cover;
+	color:white;
+	p{
+		font-size:48px;
+		font-weight:bolder;
+		@include breakpoint(large-mobile) {
+			font-size:24px;
+		}
+	}
+}
+.studyLogo{//sections on purple background with an image
+	background:url(../images/borderLogo.png);
+	background-size: 100% 100%;
+	width:155px;
+	height:172px;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	flex-direction:column;
+}

@@ -1,0 +1,105 @@
+//form section
+.orderOfFormSection{
+	display:flex;
+	flex-direction:row;
+	width:100%;
+	@include breakpoint(large-mobile) {
+	 flex-wrap: wrap;
+		.contactSocial{
+		 	img{
+		 		margin-left:5%;
+				padding:1%;
+				margin:0;
+		 	}
+		 }
+		 form{
+			 width:100%;
+			 height:50%;
+			 font-size:23px;
+			 margin-bottom:5%;
+			 margin-top:5%;
+			 font-weight:bold;
+			 color:black;
+			 input{
+				 width:100%;
+				 margin-bottom:10%;
+				 outline:none;
+				 padding:5%;
+			 }
+			 textarea{
+				 height:278px;
+				 width:100%;
+				 outline:none;
+				 resize:none;
+				 padding:5%;
+			 }
+		 }
+		 .getInTouch{
+		 	display:flex;
+		 	flex-direction:column;
+			justify-content: center;
+			 .purpleButton{
+					width:70%;
+					height:70%;
+					align-self:center;
+					margin-top:150px;
+					margin-bottom:15%;
+			}
+		}
+	}
+}
+.orderOfFormSection{
+	@include breakpoint(desktop) {
+		flex-wrap:nowrap;
+		.contactSocial{
+			margin-left:0;
+				img{
+					margin-left:0;
+					padding:3%;
+				}
+		}
+		form{
+			width:100%;
+			height:100%;
+			font-size:23px;
+			margin-bottom:5%;
+			font-weight:bold;
+			color:black;
+			input{
+				width:528px;
+				margin-bottom:10%;
+				outline:none;
+				padding:5%;
+			}
+			textarea{
+				height:278px;
+				width:528px;
+				outline:none;
+				resize:none;
+				padding:5%;
+			}
+		}
+		.getInTouch{
+			display:flex;
+			width:50%;
+			flex-direction:column;
+			justify-content: flex-start;
+		}
+	}
+}
+.contact{
+	flex-wrap:wrap;
+	margin-left:3%;
+	margin-right:3%;
+	p{
+		font-size:23px;
+		margin-top:0;
+		color:black;
+		font-weight:bold;
+		text-align:left;
+	}
+	h2,h3{
+		font-size:28px;
+		color:black;
+	}
+}

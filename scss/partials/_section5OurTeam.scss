@@ -1,0 +1,133 @@
+.frameForSlider{//frame for clickable arrows
+	background: url(../images/rightFrame.png);
+	background-size: 100% 100%;
+	width:68px;
+	height:72px;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	margin-left:10px;
+	padding:5px;
+}
+#leftArrow:hover{
+	cursor:pointer;
+}
+#rightArrow:hover{
+	cursor:pointer;
+}
+.frames{
+	display:flex;
+	justify-content: center;
+	justify-content: space-around;
+}
+.member-first{
+background: url(https://upload.wikimedia.org/wikipedia/commons/b/b3/Creative-Tail-People-wonder-women.svg);
+background-size: 100% 100%;
+width:200px;
+height:200px;
+margin-top:70px;
+margin-bottom:50px;
+display:flex;
+align-items: center;
+justify-content: center;
+	h3{
+		text-align:center;
+		font-size:24px;
+	}
+	p{
+		color:#959595;
+		font-size:6px;
+		font-weight:bolder;
+	}
+}
+.member-second{
+	@extend .member-first;
+	background:url(https://upload.wikimedia.org/wikipedia/commons/9/9e/Creative-Tail-People-gentleman.svg);
+	background-size:100% 100%;
+	width:200px;
+	height:200px;
+}
+.member-third{
+	@extend .member-first;
+	background:url(https://upload.wikimedia.org/wikipedia/commons/0/0f/Creative-Tail-People-women.svg);
+	background-size:100% 100%;
+	width:200px;
+	height:200px;
+}
+.member-fourth{
+	@extend .member-first;
+	background:url(https://upload.wikimedia.org/wikipedia/commons/a/a9/Creative-Tail-People-queen.svg);
+	background-size:100% 100%;
+	width:200px;
+	height:200px;
+}
+.member-fifth{
+	@extend .member-first;
+	background:url(https://upload.wikimedia.org/wikipedia/commons/8/8b/Creative-Tail-People-man-2.svg);
+	background-size:100% 100%;
+	width:200px;
+	height:200px;
+}
+.member-sixth{
+	@extend .member-first;
+	background:url(https://upload.wikimedia.org/wikipedia/commons/c/c1/Creative-Tail-People-king.svg);
+	background-size:100% 100%;
+	width:200px;
+	height:200px;
+}
+
+.slider{
+	overflow:hidden;
+	ul{
+		display:flex;
+		flex-wrap: nowrap;
+		align-items:flex-start;
+		justify-content: space-between;
+		list-style: none;
+		margin:0;
+		padding:0;
+		position: relative;
+		font-size: 0;
+	}
+}
+.members{
+	min-width:360px;
+	height:auto;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	flex-direction: column;
+	@include breakpoint(large-mobile) {
+		width:100%;
+		padding:0;
+		margin:0;
+	}
+	h3{
+		font-size:24px;
+		color:black;
+		text-align:center;
+	}
+	p{
+		color:black;
+		font-size:18px;
+		font-weight:bold;
+		text-align:center;
+	}
+}
+//social Icons attached to members
+.social{
+	display:flex;
+	flex-direction:row;
+	padding:5%;
+	justify-content: space-around;
+}
+.frameForSocial{
+	background: url(../images/socialIcon.png);
+	background-size: 100% 100%;
+	width:58px;
+	height:62px;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	margin-left:10px;
+}

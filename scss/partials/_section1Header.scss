@@ -1,0 +1,94 @@
+.sectionHeader{
+  background:url(../images/top.jpg) no-repeat;
+  background-size: cover;
+  color:white;
+}
+#logo{
+	margin-top:5%;
+	width:auto;
+	@include breakpoint(large-mobile) {
+		width:100%;
+	}
+}
+h1{
+  font-size:48px;
+  text-align:center;
+	@include breakpoint(large-mobile) {
+		font-size:24px;
+	}
+}
+p{
+  font-size:24px;
+  text-align:center;
+	text-decoration:none;
+	color:white;
+	@include breakpoint(large-mobile) {
+		font-size:18px;
+	}
+}
+.framePictures{
+	display:flex;
+	flex-direction:row;
+	padding:0;
+	height:350px;
+	align-items:flex-end;
+	@include breakpoint(large-mobile) {
+		width:100%;
+		height:100%;
+		flex-direction: row;
+		flex-wrap:wrap;
+		flex: 0 0 50%;
+		.frame{
+			background:url(../images/shape1.svg) no-repeat;
+			background-size: 100% 100%;
+			width:110px;
+			height:125px;
+			padding:15px;
+			margin-top:1%;
+			margin-bottom:1%;
+			margin-left:5%;
+			margin-right:5%;
+			img{
+				margin-top:10px;
+				width:55%;
+				height:70%;
+			}
+		}
+	}
+}
+.frame{
+	background:url(../images/shape1.svg) no-repeat;
+	background-size: 100% 100%;
+	width:155px;
+	height:172px;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	flex-direction:column;
+	img{
+		width:auto;
+		height:auto;
+	}
+}
+.frame:hover{
+	background:url(../images/purple.svg) no-repeat;
+	background-size:100% 100%;
+  cursor: pointer;
+}
+.up{//those two elements go up
+	align-self: flex-start;
+}
+.down img:hover{
+	background:url(../images/purple.svg) no-repeat;
+	background-size:100% 100%;
+}
+.down{
+	@include breakpoint(large-mobile) {
+		img{
+			margin-top:25%;
+			width:80%;
+			height:75%;
+			align-self:center;
+		}
+	}
+}

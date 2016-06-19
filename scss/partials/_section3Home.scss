@@ -1,0 +1,67 @@
+//sectionHome
+.sectionHome{
+	background:#eeeeee;
+}
+.frameElements{
+	background:url(../images/shape1.svg) no-repeat;
+	background-size: 100% 100%;
+	width:155px;
+	height:172px;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	flex-direction:column;
+	img{
+		width:auto;
+		height:auto;
+	}
+	@include breakpoint(large-mobile) {
+		width:110px;
+		height:125px;
+		img{
+			margin-top:10px;
+			width:55%;
+			height:70%;
+		}
+	}
+}
+.frameElements:hover{
+	background:url(../images/shape4.svg) no-repeat;
+	background-size:100% 100%;
+}
+.wrapperSection2{
+	margin-left:9%;
+	margin-right:9%;
+	padding:10% 0 10% 0;
+	display:flex;
+	flex-wrap:wrap;
+}
+[class^="box-"]{
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+	@include breakpoint(large-mobile) {
+	justify-content: flex-start;
+	margin-top:1%;
+	flex-wrap: nowrap;
+	flex: 0 0 50%;
+	padding:10px;
+	}
+	@include breakpoint(tablet) {
+		flex: 0 0 25%;
+		flex-wrap: wrap;
+	}
+	@include breakpoint(desktop) {
+		flex: 0 0 25%;
+		flex-wrap:nowrap;
+	}
+	h3{
+		text-align:center;
+		font-size:24px;
+	}
+	p{
+		color:#959595;
+		font-size:16px;
+		font-weight:bolder;
+	}
+}

@@ -1,0 +1,43 @@
+//headings of certain sections:about me/our team/etc
+.distinctive{
+	@include breakpoint(large-mobile) {
+		margin-bottom:40px;
+		div{
+			padding:20px;
+			display:inline;
+			text-align:center;
+		}
+	}
+	@include breakpoint (desktop){
+		text-align:center;
+		color:#959595;
+		padding:2%;
+		margin-top:0;
+		div{//purple triangle borders
+			position:relative;
+			display:inline-block;
+			padding:28px;
+			&::before, &::after {
+				border:2px solid #9f449b;
+				content: "";
+				display: block;
+				height: 35px;
+				position: absolute;
+				width: 35px;
+			}
+		}
+		div:before{
+			border-width: 0 0 1px 1px;
+			bottom:0;
+			left:0;
+		}
+		div:after{
+			border-width: 1px 1px 0 0;
+			top:0;
+			right:0;
+		}
+	}
+	span{
+		color:#9f449b;
+	}
+	}

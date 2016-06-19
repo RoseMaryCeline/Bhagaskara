@@ -1,0 +1,66 @@
+
+.portfolioBackground{
+	background:white;
+}
+.simplefilter{//buttons with options
+	margin-bottom:10%;
+	@include breakpoint(large-mobile) {
+		margin-bottom:40px;
+		width:100%;
+	}
+	li{
+		text-decoration:none;
+		display:inline-block;
+		text-align:center;
+		padding:1%;
+	}
+	li:hover{
+		cursor:pointer;
+	}
+}
+
+[class^="btn-"]{
+	font-size:18px;
+	color:black;
+	font-weight:bold;
+	background:white;
+	border:1px solid black;
+	box-shadow: 0px 3px 3px gray;
+	border-radius:8%;
+	width:83px;
+	height: 34px;
+	margin-left:10px;
+	&:hover{
+		color:white;
+		background:$mainColor;
+	}
+}
+.filtr-container{
+	margin-left:0;
+	margin-right:0;
+	display:flex;
+	flex-wrap:wrap;
+	img {
+		height: auto;
+		width: 100%;
+	}
+}
+[class^="picture-"]{
+	padding: 0 20px;
+	@include breakpoint(tablet) {
+		flex: 0 0 50%;
+	}
+	@include breakpoint(desktop) {
+		flex: 0 0 33.3%;
+	}
+	h3{
+		color:black;
+		font-size:24px;
+		text-align:center;
+	}
+	p{
+		color:gray;
+		font-size:17px;
+		font-weight:bold;
+	}
+}
